@@ -11,7 +11,6 @@ public class SupportActivity extends MyActivity<ActivitySupportBinding>{
 
     private static final String TITLE = "TITLE";
     private static final String DATA = "DATA";
-    private String title = "";
 
     public static void start(Context context, String title) {
         Intent starter = new Intent(context, SupportActivity.class);
@@ -25,13 +24,13 @@ public class SupportActivity extends MyActivity<ActivitySupportBinding>{
 
     @Override
     protected void setupView() {
-        title = getIntent().getStringExtra(TITLE);
-        binding.topBar.menu.setVisibility(View.GONE);
+        String title = getIntent().getStringExtra(TITLE);
+        binding.topBar.menu.setVisibility(View.INVISIBLE);
         binding.topBar.title.setText(title);
     }
 
     @Override
     protected void addEvents() {
-
+        binding.topBar.back.setOnClickListener(v -> finish());
     }
 }

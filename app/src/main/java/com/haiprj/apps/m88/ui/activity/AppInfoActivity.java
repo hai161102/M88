@@ -10,8 +10,6 @@ import com.haiprj.apps.m88.databinding.ActivityViewAppInfoBinding;
 public class AppInfoActivity extends MyActivity<ActivityViewAppInfoBinding>{
     private static final String TITLE = "TITLE";
     private static final String DATA = "DATA";
-    private String title = "";
-    private String data = "";
 
     public static void start(Context context, String title, String data) {
         Intent starter = new Intent(context, SupportActivity.class);
@@ -26,8 +24,8 @@ public class AppInfoActivity extends MyActivity<ActivityViewAppInfoBinding>{
 
     @Override
     protected void setupView() {
-        title = getIntent().getStringExtra(TITLE);
-        data = getIntent().getStringExtra(DATA);
+        String title = getIntent().getStringExtra(TITLE);
+        String data = getIntent().getStringExtra(DATA);
         binding.topBar.menu.setVisibility(View.GONE);
         binding.topBar.title.setText(title);
         binding.text.setText(data);
