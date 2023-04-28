@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">M88</string>
+    <string name="th_ng_tin">Thông tin</string>
+    <string name="gi_i_thi_u">Giới thiệu</string>
+    <string name="b_o_m_t">Bảo mật</string>
+    <string name="h_tr">Hỗ trợ</string>
+    <string name="exit">Thoát</string>
+    <string name="welcome_to_the_customer_servide_center">Welcome to the customer servide center</string>
+    <string name="zalo">Zalo</string>
+    <string name="telegram">Telegram</string>
+    <string name="facebook">Facebook</string>
+    <string name="chat_ngay">Chat ngay</string>
+    <string name="contact_now">Contact now</string>
+    <string name="working_time_in_time_zone_8_will_try_to_answer_in_1_hour_other_time_zone_will_reply_in_24_hours">Working time in time zone 8 will try to answer in 1 hour. Other time zone will reply in 24 hours.</string>
+    <string name="danh_s_ch_c_u_th">Danh sách cầu thủ</string>
+</resources>
